@@ -14,7 +14,7 @@ Copy reference to dependencies
 These are the variables that should be added to your 7777-config.yml. Or simply download/copy the [config-file example](https://github.com/ElecTwix/SimpleLaterJoin/Example/7777-config.yml)
 | Variable  | Description | Default value |
 | ------------- | ------------- | ------------- |
-| Class_forrespawn | Changes the class for respawn when players join server late. (if you dont know Classes Go find discord #resources ) | `RoleType.ClassD` |
+| Class_forrespawn | Changes the class for respawn when players join server late. (if you dont know Classes Go find discord #resources ) | `ClassD` |
 | respawn_duration | When Round Max time for later respawn **(Seconds)** | `30` |
 
 ### That'd be all
