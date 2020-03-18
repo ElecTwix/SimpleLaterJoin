@@ -7,8 +7,8 @@
     <ProjectGuid>{9280B8BA-6290-4FC8-A58F-BC24E43AA486}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SamplePlugin</RootNamespace>
-    <AssemblyName>SamplePlugin</AssemblyName>
+    <RootNamespace>SimpleLaterJoin</RootNamespace>
+    <AssemblyName>SimpleLaterJoin</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

@@ -2,16 +2,15 @@ using System;
 using EXILED;
 using EXILED.Extensions;
 
-namespace LaterJoinSimple
-{
+namespace LaterJoinSimple {
 	public class Plugin : EXILED.Plugin
 	{
 		//Instance variable for eventhandlers
 		public EventHandlers EventHandlers;
 
-        public string Classforrespawn;
+        public string team_respawn_queue;
 
-        public uint RespawnDuration;
+        public float RespawnDuration;
 
         public override void OnEnable()
 		{
@@ -31,22 +30,31 @@ namespace LaterJoinSimple
 			}
 		}
 
-		public override void OnDisable()
-		{
-
+        public override void OnDisable()
+        {
             EventHandlers = null;
-		}
+        }
 
-		public override void OnReload()
-		{
+        public void reloadConfig()
+        {
+            Config.Reload();
+
             #region Lights Config
-            // Text
-            Classforrespawn = Config.GetString("Class_forrespawn", "RoleType.ClassD");
 
-            RespawnDuration = Config.GetUInt("respawn_duration", 30);
+
+            // Timers
+            RespawnDuration = Config.GetFloat("RespawnDuration", 60f);
+
+            // Command
+            team_respawn_queue = Config.GetString("Classforrespawn", "ClassD");
             #endregion
         }
 
-        public override string getName { get; } = "LaterjoinSimple";
-	}
+        public override void OnReload()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override string getName { get; } = "LightsPlugin 1.3 - SebasCapo";
+    }
 }

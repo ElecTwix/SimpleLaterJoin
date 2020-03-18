@@ -14,7 +14,7 @@ namespace LaterJoinSimple
         {
             if (RoundSummary.RoundInProgress() && RoundSummary.roundTime < (plugin.RespawnDuration))
             {
-                Player.GetPlayer(PlayerManager.localPlayer).characterClassManager.SetPlayersClass((RoleType)System.Enum.Parse(typeof(RoleType), plugin.Classforrespawn), ev.Player.gameObject);
+                Player.GetPlayer(PlayerManager.localPlayer).characterClassManager.SetPlayersClass((RoleType)System.Enum.Parse(typeof(RoleType), plugin.team_respawn_queue), ev.Player.gameObject);
             }
         }
 
