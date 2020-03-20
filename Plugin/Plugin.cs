@@ -43,7 +43,7 @@ namespace LaterJoinSimple {
 
 
             // Timers
-            RespawnDuration = Config.GetFloat("RespawnDuration", 60f);
+            RespawnDuration = Config.GetFloat("RespawnDuration", 60);
 
             // Command
             team_respawn_queue = Config.GetString("Classforrespawn", "ClassD");
@@ -55,6 +55,6 @@ namespace LaterJoinSimple {
             throw new NotImplementedException();
         }
 
-        public override string getName { get; } = "LightsPlugin 1.3 - SebasCapo";
+        public override string getName { get; } = "LaterJoinSimple 0.3 - ElecTwix";
     }
 }
