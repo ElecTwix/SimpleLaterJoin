@@ -1,5 +1,5 @@
 # LaterJoin
-A simple yet EXTREMELY configurable EXILED Plugin that lets players respawn when rounds starts.
+A simple configurable EXILED Plugin that lets players respawn when rounds starts.
 
 ### Installation
 Copy SimpleLaterJoin Plugin To
